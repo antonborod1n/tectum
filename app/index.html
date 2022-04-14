@@ -4,14 +4,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tectum</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="container-main">
+            <div class="header__inner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="./images/logo.svg" alt="Логотип">
+                </a>
+                <div class="menu">
+                    <div class="menu__box">
+                        <button class="menu__btn">
+                            <img src="./images/icons/light-theme.svg" alt="Тема темная">
+                        </button>
+                        <form class="form__lang" action="#">
+                            <select name="" id="">
+                                <option value="english">English</option>
+                                <option value="russia">Русский</option>
+                            </select>
+                        </form>
+                        <form class="form__carrancy" action="#">
+                            <select name="" id="">
+                                <option value="RUB">RUB</option>
+                                <option value="RUB">USD</option>
+                                <option value="MOZ">MOZ</option>
+                                <option value="TEC">TEC</option>
+                                <option value="BTC">BTC</option>
+                                <option value="ETH">ETH</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                                <option value="GBP">GBP </option>
+                                <option value="CAD">CAD</option>
+                                <option value="AUD">AUD</option>
+                                <option value="RUB">RUB</option>
+                            </select>
+                        </form>
+                        <button class="menu__btn">Вход</button>
+                        <button class="menu__btn">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="top">
+            <div class="container-top">
+                <div class="top__info">
+                    <div class="top__item">
+                        <p class="top__info-text">всего кластеров</p>
+                        <span class="top__info-numb">28</span>
+                        <p class="top__info-text">Активных кластеров </p>
+                        <span class="top__info-numb">12</span>
+                    </div>
+                    <div class="top__item">
+                        <p class="top__info-text">Всего нод</p>
+                        <span class="top__info-numb">28</span>
+                        <p class="top__info-text">Активных нод</p>
+                        <span class="top__info-numb">12</span>
+                    </div>
+                    <div class="top__item top__item">
+                        <p class="top__info-text">всего токенов</p>
+                        <span class="top__info-numb">38'278'154'268</span>
+                    </div>
+                    <div class="top__item top__item">
+                        <p class="top__info-text">капитализация</p>
+                        <span class="top__info-numb">$ 72,581,690,992</span>
+                    </div>
+                </div>
+                <div class="top__search">
+                    <form class="search__form" action="#">
+                        <div>
+                            <input class="search__form-text" type="search" name="text"
+                                placeholder="Хэш, Нода ID, Блокчейн ID, Транзакция или Кошелек">
+                            <input class="search__form-btn" type="submit" name="search-btn" value="">
+                        </div>
+                        <div class="search__form-box">
+                            <label class="search__form-label">
+                                <input class="search__form-input" type="radio" name="choice" value="events">
+                                <span class="search__form-radio"></span>
+                                События
+                            </label>
+                            <label class="search__form-label">
+                                <input class="search__form-input" type="radio" name="choice" value="tokens">
+                                <span class="search__form-radio"></span>
+                                Токены
+                            </label>
+                            <label class="search__form-label">
+                                <input class="search__form-input" type="radio" name="choice" value="storage">
+                                <span class="search__form-radio"></span>
+                                Хранилище
+                            </label>
+                            <label class="search__form-label">
+                                <input class="search__form-input" type="radio" name="choice" value="files">
+                                <span class="search__form-radio"></span>
+                                Файлы
+                            </label>
+                            <label class="search__form-label">
+                                <input class="search__form-input" type="radio" name="choice" value="contracts">
+                                <span class="search__form-radio"></span>
+                                Контракты
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="table">
+            <div class="container">
+                <h2 class="table__title">События все</h2>
+                <table class="tab">
+                    <tr class="tab__row-title">
+                        <td class="tab__title">Сеть</td>
+                        <td class="tab__title">Блок</td>
+                        <td class="tab__title">Хеш события</td>
+                        <td class="tab__title">Сумма</td>
+                        <td class="tab__title">Валюта</td>
+                        <td class="tab__title">Дата/Время</td>
+                    </tr>
+                    <tr class="tab__row">
+                        <td class="tab__net bitcoin">Bitcoin</td>
+                        <td class="tab__numb">123456</td>
+                        <td class="tab__hash">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFup8J</td>
+                        <td class="tab__sum">0.0172000</td>
+                        <td class="tab__coin bitcoin">BTC</td>
+                        <td class="tab__time">2022/01/22 15:19:08</td>
+                    </tr>
+                    <tr class="tab__row">
+                        <td class="tab__net bitcoin">Bitcoin</td>
+                        <td class="tab__numb">123456</td>
+                        <td class="tab__hash">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFup8J</td>
+                        <td class="tab__sum">0.017200</td>
+                        <td class="tab__coin bitcoin">BTC</td>
+                        <td class="tab__time">2022/01/22 15:19:08</td>
+                    </tr>
+                    <tr class="tab__row">
+                        <td class="tab__net bitcoin">Bitcoin</td>
+                        <td class="tab__numb">12345</td>
+                        <td class="tab__hash">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFup8J</td>
+                        <td class="tab__sum">0.0002023</td>
+                        <td class="tab__coin bitcoin">BTC</td>
+                        <td class="tab__time">2022/01/22 15:19:08</td>
+                    </tr>
+                    <tr class="tab__row">
+                        <td class="tab__net ethereum">Ethereum</td>
+                        <td class="tab__numb">12345</td>
+                        <td class="tab__hash">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFuwp8J</td>
+                        <td class="tab__sum">1 097</td>
+                        <td class="tab__coin usdt">USDT</td>
+                        <td class="tab__time">2022/01/22 15:19:08</td>
+                    </tr>
+                    <tr class="tab__row">
+                        <td class="tab__net ethereum">Ethereum</td>
+                        <td class="tab__numb">12345</td>
+                        <td class="tab__hash">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFuwp8J</td>
+                        <td class="tab__sum">490</td>
+                        <td class="tab__coin usdt">USDT</td>
+                        <td class="tab__time">2022/01/22 15:19:08</td>
+                    </tr>
+                    <tr class="tab__row">
+                        <td class="tab__net bitcoin">Bitcoin</td>
+                        <td class="tab__numb">1234</td>
+                        <td class="tab__hash">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFuwp8J</td>
+                        <td class="tab__sum">0.01</td>
+                        <td class="tab__coin bitcoin">BTC</td>
+                        <td class="tab__time">2022/01/22 15:19:08</td>
+                    </tr>
+                    <tr class="tab__row">
+                        <td class="tab__net litecoin">Litecoin</td>
+                        <td class="tab__numb">1234</td>
+                        <td class="tab__hash">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUDDxcFuwp8J</td>
+                        <td class="tab__sum">15</td>
+                        <td class="tab__coin litecoin">LTC</td>
+                        <td class="tab__time">2022/01/22 15:19:08</td>
+                    </tr>
+                    <tr class="tab__row">
+                        <td class="tab__net bitcoin">Bitcoin</td>
+                        <td class="tab__numb">123456</td>
+                        <td class="tab__hash">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFuwp8J</td>
+                        <td class="tab__sum">1501</td>
+                        <td class="tab__coin bitcoin">BTC</td>
+                        <td class="tab__time">2022/01/22 15:19:08</td>
+                    </tr>
+                    <tr class="tab__row">
+                        <td class="tab__net ethereum">Ethereum</td>
+                        <td class="tab__numb">1234</td>
+                        <td class="tab__hash">CYjJTSev87kAdgdb1FvueeTT6nf2TLUdpDDxcFuwp8J</td>
+                        <td class="tab__sum">30</td>
+                        <td class="tab__coin usdt">USDT</td>
+                        <td class="tab__time">2022/01/22 15:19:08</td>
+                    </tr>
+                    <tr class="tab__row">
+                        <td class="tab__net litecoin">Litecoin</td>
+                        <td class="tab__numb">1234</td>
+                        <td class="tab__hash">CYjJTSev87kAdgdb1FvueeTT6cnf2TLUdpDDxcFuwp8J</td>
+                        <td class="tab__sum">34.021</td>
+                        <td class="tab__coin litecoin">LTC</td>
+                        <td class="tab__time">2022/01/22 15:19:08</td>
+                    </tr>
+                </table>
+                <div class="navigation__box">
+                    <div class="pagination">
+                        <a class="pagination__double-prew pagination__arrows">
+                            <img class="pagination__img" src="./images/icons/double-arrow-left.svg" alt="Arrows">
+                        </a>
+                        <a class="pagination__one-prew pagination__arrows">
+                            <img class="pagination__img" src="./images/icons/one-arrow-left.svg" alt="Arrows">
+                        </a>
+                        <span class="pagination__first-numb">1</span>
+                        <span class="pagination__last-numb">из 2658 01</span>
+                        <a class="pagination__one-next pagination__arrows">
+                            <img class="pagination__img" src="./images/icons/one-arrow-right.svg" alt="Arrows">
+                        </a>
+                        <a class="pagination__double-next pagination__arrows">
+                            <img class="pagination__img" src="./images/icons/double-arrow-right.svg" alt="Arrows">
+                        </a>
+                    </div>
+                    <div class="sort">
+                        <p class="sort__text">Показывать по</p>
+                        <form class="sort__form" action="#">
+                            <select name="sort">
+                                <option value="10">10</option>
+                                <option value="25">25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container-main">
+            <div class="footer__inner">
+                <a class="logo" href="#">
+                    <img class="logo__img" src="./images/logo.svg" alt="Логотип">
+                </a>
+                <ul class="footer__social">
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="./images/social/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="./images/social/telegram.svg" alt="telegram">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="./images/social/linkedin.svg" alt="linkedin">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="./images/social/messenger.svg" alt="messenger">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="./images/social/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                    <li class="footer__social-item">
+                        <a class="footer__social-link" href="#">
+                            <img class="footer__social-img" src="./images/social/twitter.svg" alt="twitter">
+                        </a>
+                    </li>
+                </ul>
+                <div class="footer__info">
+                    <p class="footer__info-text">Tectum.io©, 2020</p>
+                    <p class="footer__info-text">
+                        <a class="footer__info-text footer__info-link" href="#">Terms & Conditions – Privacy Policy</a>
+                    </p>
+                    <p class="footer__info-text"> Version 0.01</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
 
     <script src="js/main.min.js"></script>
 </body>

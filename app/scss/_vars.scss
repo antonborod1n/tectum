@@ -1,0 +1,69 @@
+$accent: #FDDA25;
+$default: #F2F4F7;
+$black: #06070A;
+$grey: #5C6987;
+$bg:#222837;
+
+
+%roboto-400 {
+    font-family: 'Roboto-Regular';
+    font-weight: 400;
+}
+%roboto-500 {
+    font-family: 'Roboto-Medium';
+    font-weight: 500;
+}
+%roboto-700 {
+    font-family: 'Roboto-Bold';
+    font-weight: 700;
+}
+
+%btc {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/btc.png);
+        top: 13px;
+        left: 9px;
+    }
+}
+
+%ltc {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/ltc.png);
+        top: 13px;
+        left: 9px;
+    }
+}
+
+%efr {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/etherium.png);
+        top: 10px;
+        left: 6px;
+    }
+}
+
+%usdt {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: url(../images/icons/usdt.png);
+        top: 15px;
+        left: 9px;
+    }
+}
+
+%copy {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: url(../images/icons/copy.png);
+        top: 10px;
+        right: 0;
+    }
+}
